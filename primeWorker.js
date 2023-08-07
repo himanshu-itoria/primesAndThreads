@@ -1,32 +1,4 @@
 
-// self.onmessage = function(event) {
-//   const n = event.data.n;
-//   generatePrime(n);
-// };
-
-// function generatePrime(n) {
-//   let X = 0, i = 2;
-//   let flag;
-
-//   while (X < n) {
-//       flag = true;
-
-//       for (let j = 2; j <= Math.sqrt(i); j++) {
-//           if (i % j === 0) {
-//               flag = false;
-//               break;
-//           }
-//       }
-
-//       if (flag) {
-//           postMessage(i);
-//           X++;
-//       }
-
-//       i++;
-//   }
-// }
-// primeWorker.js
 self.onmessage = event => {
   const { start, end } = event.data;
   let primes = [];
